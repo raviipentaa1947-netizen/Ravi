@@ -1,39 +1,18 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundColor">
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:padding="8dp"
-            android:gravity="center_vertical"
-            android:background="@color/headerBlue">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="₹ Salary Calculator"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/white"/>
-        </LinearLayout>
-
-        <EditText
-            android:id="@+id/base_salary"
-            android:hint="Monthly Salary (₹)"
-            android:inputType="numberDecimal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"/>
-
-        <EditText
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Salary Calculator"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</LinearLayout>
             android:id="@+id/tax_amount"
             android:hint="Tax Amount (₹)"
             android:inputType="numberDecimal"
