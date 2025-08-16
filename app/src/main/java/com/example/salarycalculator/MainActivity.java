@@ -1,27 +1,30 @@
-package com.example.salarycalculator
+package com.example.salarycalculator;
 
-import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.view.View;
+import android.view.animation.AlphaAnimation;
+import android.widget.TextView;
 
-class MainActivity : AppCompatActivity() {
+import androidx.appcompat.app.AppCompatActivity;
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+public class MainActivity extends AppCompatActivity {
 
-        val basicSalaryInput = findViewById<EditText>(R.id.etBasicSalary)
-        val bonusInput = findViewById<EditText>(R.id.etBonus)
-        val resultText = findViewById<TextView>(R.id.tvResult)
-        val calculateBtn = findViewById<Button>(R.id.btnCalculate)
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-        calculateBtn.setOnClickListener {
-            val basicSalary = basicSalaryInput.text.toString().toDoubleOrNull() ?: 0.0
-            val bonus = bonusInput.text.toString().toDoubleOrNull() ?: 0.0
-            val total = basicSalary + bonus
-            resultText.text = "Total Salary: ₹$total"
-        }
+        TextView createdBy = findViewById(R.id.createdByText);
+
+        // Delay then fade in
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
+            AlphaAnimation fadeIn = new AlphaAnimation(0f, 1f);
+            fadeIn.setDuration(1500);
+            fadeIn.setFillAfter(true);
+            createdBy.setVisibility(View.VISIBLE);
+            createdBy.startAnimation(fadeIn);
+        }, 1000); // 1s delay after opening
     }
 }
