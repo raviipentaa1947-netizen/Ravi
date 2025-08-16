@@ -1,6 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Theme.SalaryCalculator" parent="Theme.Material3.Light.NoActionBar">
-        <item name="colorPrimary">@color/primaryColor</item>
-        <item name="android:statusBarColor">@color/primaryColor</item>
+    <!-- App theme -->
+    <style name="Theme.SalaryCalculator" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <!-- Fullscreen Splash -->
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 </resources>
