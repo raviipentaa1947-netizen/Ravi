@@ -1,25 +1,7 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-
-    <!-- App Theme -->
-    <style name="Theme.SalaryCalculator" parent="Theme.Material3.Light.NoActionBar">
-        <!-- Primary and Secondary Colors -->
-        <item name="colorPrimary">@color/orangePrimary</item>
-        <item name="colorPrimaryVariant">@color/orangeDark</item>
-        <item name="colorSecondary">@color/yellowAccent</item>
-        <item name="colorOnPrimary">@color/textOnPrimary</item>
-        <item name="colorOnSecondary">@color/textOnPrimary</item>
-
-        <!-- Button Colors -->
-        <item name="materialButtonStyle">@style/CustomButtonStyle</item>
-
-        <!-- Status Bar -->
-        <item name="android:statusBarColor">@color/orangeDark</item>
-    </style>
-
-    <!-- Custom Button Style -->
-    <style name="CustomButtonStyle" parent="Widget.Material3.Button">
-        <item name="android:backgroundTint">@color/buttonBackground</item>
-        <item name="android:textColor">@color/buttonText</item>
-    </style>
-
-</resources>
+<style name="Theme.SalaryCalculator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <item name="colorPrimary">@color/primaryColor</item>
+    <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+    <item name="colorOnPrimary">@android:color/white</item>
+    <item name="colorAccent">@color/accentColor</item>
+    <item name="android:statusBarColor">@color/primaryDarkColor</item>
+</style>
