@@ -1,8 +1,26 @@
 <resources>
-    <color name="primary">#6200EE</color>
-    <color name="primary_dark">#3700B3</color>
-    <color name="accent">#03DAC5</color>
-    <color name="white">#FFFFFF</color>
-    <color name="black">#000000</color>
-    <color name="gray_light">#F5F5F5</color>
+    <!-- Primary Theme Colors -->
+    <color name="colorPrimary">#FF9800</color>      <!-- Bright Orange -->
+    <color name="colorPrimaryDark">#F57C00</color>  <!-- Darker Orange -->
+    <color name="colorAccent">#FFC107</color>       <!-- Amber / Yellow -->
+
+    <!-- Splash Gradient Colors -->
+    <color name="splashGradientStart">#FF9800</color> <!-- Orange -->
+    <color name="splashGradientEnd">#FFC107</color>   <!-- Yellow -->
+
+    <!-- Text Colors -->
+    <color name="textPrimary">#212121</color>  <!-- Dark Gray for main text -->
+    <color name="textSecondary">#757575</color> <!-- Lighter Gray -->
+    <color name="textOnPrimary">#FFFFFF</color> <!-- White text on orange -->
+
+    <!-- Button Colors -->
+    <color name="buttonBackground">#FF9800</color>   <!-- Orange -->
+    <color name="buttonText">#FFFFFF</color>         <!-- White text -->
+
+    <!-- Background Colors -->
+    <color name="backgroundLight">#FFF8E1</color> <!-- Light Yellow -->
+    <color name="backgroundDark">#F57C00</color>  <!-- Deep Orange -->
+
+    <!-- Fix for launcher background -->
+    <color name="ic_launcher_background">#FFFFFF</color>
 </resources>
