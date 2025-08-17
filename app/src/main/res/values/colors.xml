@@ -1,11 +1,10 @@
 <resources>
-    <color name="splashGradientStart">#FF9800</color> <!-- Orange -->
-    <color name="splashGradientEnd">#FFC107</color>   <!-- Yellow -->
-    <color name="primaryColor">#FF9800</color>
-    <color name="primaryDarkColor">#F57C00</color>
-    <color name="accentColor">#FFC107</color>
-    <color name="backgroundColor">#FFF8E1</color> <!-- Light cream background -->
-    <color name="buttonColor">#FF9800</color>
-    <color name="primaryText">#212121</color>
-    <color name="secondaryText">#424242</color>
+    <!-- App Color Palette -->
+    <color name="colorPrimary">#FF9800</color> <!-- Orange -->
+    <color name="colorPrimaryDark">#F57C00</color> <!-- Dark Orange -->
+    <color name="colorAccent">#FFC107</color> <!-- Amber (Yellow) -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#757575</color>
+    <color name="buttonRipple">#FFB300</color> <!-- Ripple effect color -->
 </resources>
