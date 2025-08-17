@@ -1,12 +1,9 @@
-package com.example.salarycalculator;
+package com.yourpackage;
 
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
-import android.view.View;
-import android.view.animation.AlphaAnimation;
 import android.widget.TextView;
-
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.TextInputEditText;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,15 +13,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView createdBy = findViewById(R.id.createdByText);
+        TextInputEditText basicSalaryInput = findViewById(R.id.basicSalaryInput);
+        TextInputEditText allowanceInput = findViewById(R.id.allowanceInput);
+        MaterialButton calculateButton = findViewById(R.id.calculateButton);
+        TextView resultText = findViewById(R.id.resultText);
 
-        // Delay then fade in
-        new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            AlphaAnimation fadeIn = new AlphaAnimation(0f, 1f);
-            fadeIn.setDuration(1500);
-            fadeIn.setFillAfter(true);
-            createdBy.setVisibility(View.VISIBLE);
-            createdBy.startAnimation(fadeIn);
-        }, 1000); // 1s delay after opening
+        calculateButton.setOnClickListener(v -> {
+            String basicStr = basicSalaryInput.getText().toString();
+            String allowanceStr = allowanceInput.getText().toString();
+
+            double basic = basicStr.isEmpty() ? 0 : Double.parseDouble(basicStr);
+            double allowance = allowanceStr.isEmpty() ? 0 : Double.parseDouble(allowanceStr);
+
+            double total = basic + allowance;
+            resultText.setText("Total Salary: ₹" + total);
+        });
     }
 }
