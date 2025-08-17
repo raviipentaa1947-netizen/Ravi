@@ -30,22 +30,3 @@
         android:visibility="invisible" />
 
 </LinearLayout>
-            android:layout_height="wrap_content"/>
-
-        <Button
-            android:id="@+id/calc_btn"
-            android:text="Calculate Salary"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:backgroundTint="@color/accentTeal"
-            android:textColor="@color/white"/>
-
-        <LinearLayout>
-            android:id="@+id/results_box"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"/>
-    </LinearLayout>
-</ScrollView>
