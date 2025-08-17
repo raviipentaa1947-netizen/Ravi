@@ -1,39 +1,36 @@
-package com.example.salarycalculator;
+package com.yourpackage;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Looper;
-import android.view.WindowManager;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.ScaleAnimation;
-import android.widget.ImageView;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 public class SplashActivity extends AppCompatActivity {
-
-    private static final int SPLASH_MS = 2000; // 2 seconds
+    private static final int SPLASH_DELAY = 3000; // 3 seconds
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // Fullscreen + hide action bar
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        if (getSupportActionBar() != null) getSupportActionBar().hide();
-
         setContentView(R.layout.activity_splash);
 
-        ImageView logo = findViewById(R.id.logoImage);
-        TextView created = findViewById(R.id.createdBy);
+        TextView createdByText = findViewById(R.id.createdByText);
 
-        // Logo gentle zoom-in
-        ScaleAnimation zoom = new ScaleAnimation(
-                0.9f, 1.0f, 0.9f, 1.0f,
-                ScaleAnimation.RELATIVE_TO_SELF, 0.5f,
+        // Load fade-in animation
+        Animation fadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+        createdByText.setVisibility(View.VISIBLE);
+        createdByText.startAnimation(fadeIn);
+
+        // Move to MainActivity after delay
+        new Handler().postDelayed(() -> {
+            startActivity(new Intent(SplashActivity.this, MainActivity.class));
+            finish();
+        }, SPLASH_DELAY);
+    }
+}
                 ScaleAnimation.RELATIVE_TO_SELF, 0.5f);
         zoom.setDuration(1200);
         zoom.setFillAfter(true);
