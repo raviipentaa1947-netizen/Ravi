@@ -8,6 +8,7 @@
     android:gravity="center"
     android:background="@color/white">
 
+    <!-- Title -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,6 +18,7 @@
         android:textColor="@color/colorPrimary"
         android:layout_marginBottom="24dp" />
 
+    <!-- Salary Input -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,6 +31,7 @@
             android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!-- Bonus Input -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,27 +45,6 @@
             android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/btnCalculate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Calculate"
-        android:drawableLeft="@drawable/ic_calculate"
-        android:backgroundTint="@color/colorPrimary"
-        android:textColor="@color/white"
-        android:layout_marginTop="24dp"
-        android:elevation="6dp"
-        android:padding="12dp" />
-
-    <TextView
-        android:id="@+id/textResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Result will appear here"
-        android:textSize="18sp"
-        android:textColor="@color/black"
-        android:layout_marginTop="24dp" />
-</LinearLayout>
     <!-- Allowances Input -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -100,11 +82,4 @@
         android:textStyle="bold"
         android:textColor="@color/secondaryText"
         android:layout_marginTop="30dp"/>
-
-</LinearLayout>
-        android:text="Get Started"
-        android:textColor="@color/buttonText"
-        android:backgroundTint="@color/buttonBackground"
-        android:paddingLeft="24dp"
-        android:paddingRight="24dp" />
 </LinearLayout>
