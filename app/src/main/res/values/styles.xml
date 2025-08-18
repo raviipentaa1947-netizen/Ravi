@@ -1,4 +1,12 @@
 <resources>
-    <!-- For backward compatibility with older Android versions -->
-    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar" />
+    <!-- Base app styles -->
+    <style name="Widget.SalaryCalculator.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/primary_color</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.SalaryCalculator.EditText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/primary_variant</item>
+        <item name="hintTextColor">@color/secondary_color</item>
+    </style>
 </resources>
