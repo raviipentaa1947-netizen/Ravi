@@ -1,14 +1,15 @@
 <resources>
-    <!-- App Primary Colors (Orange & Yellow) -->
-    <color name="primary_color">#FFA500</color> <!-- Orange -->
-    <color name="primary_variant">#FF8C00</color> <!-- Dark Orange -->
-    <color name="secondary_color">#FFD700</color> <!-- Yellow -->
-    <color name="secondary_variant">#FFC107</color> <!-- Amber/Yellow Variant -->
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#FFA500</color> <!-- Orange -->
+    <color name="colorPrimaryVariant">#FF8C00</color> <!-- Darker Orange -->
+    <color name="colorOnPrimary">#FFFFFF</color> <!-- White text -->
 
-    <!-- App Common Colors -->
+    <!-- Secondary Colors -->
+    <color name="colorSecondary">#FFD700</color> <!-- Yellow -->
+    <color name="colorSecondaryVariant">#FFC107</color> <!-- Amber-like -->
+    <color name="colorOnSecondary">#000000</color> <!-- Black text -->
+
+    <!-- Common Colors -->
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-
-    <!-- Background for launcher icon -->
-    <color name="ic_launcher_background">#FFFFFF</color>
 </resources>
