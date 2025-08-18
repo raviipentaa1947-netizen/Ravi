@@ -1,17 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Base application theme -->
-    <style name="Theme.SalaryCalculator" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Primary brand colors -->
+    <style name="Theme.SalaryCalculator" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary colors -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary colors -->
         <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
 
-        <!-- App icon -->
-        <item name="android:icon">@mipmap/ic_launcher</item>
-        <item name="android:roundIcon">@mipmap/ic_launcher_round</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <!-- App icon setup -->
+        <item name="android:windowSplashScreenBackground">@color/white</item>
     </style>
 
 </resources>
