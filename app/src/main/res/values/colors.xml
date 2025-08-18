@@ -1,15 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Primary Colors -->
-    <color name="colorPrimary">#FFA500</color> <!-- Orange -->
-    <color name="colorPrimaryVariant">#FF8C00</color> <!-- Darker Orange -->
-    <color name="colorOnPrimary">#FFFFFF</color> <!-- White text -->
+    <!-- Primary Orange -->
+    <color name="colorPrimary">#FFA500</color>
+    <!-- Darker Orange for status bar -->
+    <color name="colorPrimaryDark">#FF8C00</color>
+    <!-- Yellow for accent elements -->
+    <color name="colorAccent">#FFD700</color>
 
-    <!-- Secondary Colors -->
-    <color name="colorSecondary">#FFD700</color> <!-- Yellow -->
-    <color name="colorSecondaryVariant">#FFC107</color> <!-- Amber-like -->
-    <color name="colorOnSecondary">#000000</color> <!-- Black text -->
+    <!-- Background / Surface -->
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorSurface">#FFF8E1</color>
 
-    <!-- Common Colors -->
-    <color name="white">#FFFFFF</color>
-    <color name="black">#000000</color>
+    <!-- Text Colors -->
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnBackground">#000000</color>
 </resources>
