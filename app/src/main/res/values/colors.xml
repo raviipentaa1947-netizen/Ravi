@@ -1,6 +1,6 @@
 <resources>
     <!-- Primary Colors -->
-    <color name="primary_color">#FF9800</color> <!-- Orange -->
+    <color name="orange_primary">#FF9800</color> <!-- Orange -->
     <color name="primary_variant">#F57C00</color> <!-- Dark Orange -->
     <color name="on_primary">#FFFFFF</color> <!-- White text on Orange -->
 
