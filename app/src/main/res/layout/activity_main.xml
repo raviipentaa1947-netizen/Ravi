@@ -1,86 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp"
     android:gravity="center"
-    android:background="@color/white">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <!-- Title -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Salary Calculator"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimary"
-        android:layout_marginBottom="24dp" />
-
-    <!-- Salary Input -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Salary">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editSalary"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <!-- Bonus Input -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Bonus"
-        android:layout_marginTop="16dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editBonus"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <!-- Allowances Input -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Allowances"
-        android:layout_marginTop="15dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/allowanceInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <!-- Calculate Button -->
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/calculateButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Calculate"
-        android:textAllCaps="true"
-        android:layout_marginTop="25dp"
-        style="@style/Widget.MaterialComponents.Button"
-        android:backgroundTint="@color/buttonColor"
-        android:textColor="@android:color/white"
-        android:background="@drawable/rounded_button"
-        android:cornerRadius="12dp"/>
-
-    <!-- Result -->
-    <TextView
-        android:id="@+id/resultText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total Salary: ₹0"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/secondaryText"
-        android:layout_marginTop="30dp"/>
+        style="@style/OrangeButton"
+        android:text="Calculate Salary" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/OrangeButton"
+        android:text="Reset" />
+
 </LinearLayout>
