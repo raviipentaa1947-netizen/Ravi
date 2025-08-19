@@ -70,6 +70,7 @@
         style="@style/Widget.MaterialComponents.Button"
         android:backgroundTint="@color/buttonColor"
         android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
         android:cornerRadius="12dp"/>
 
     <!-- Result -->
