@@ -1,5 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Theme.MyApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+    <style name="Theme.SalaryCalculator" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
@@ -7,15 +8,19 @@
         
         <!-- Secondary color -->
         <item name="colorSecondary">@color/colorAccent</item>
-        <item name="colorOnSecondary">@color/colorOnPrimary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
         
-        <!-- Background -->
+        <!-- Background and Surface -->
         <item name="android:colorBackground">@color/colorBackground</item>
         <item name="colorSurface">@color/colorSurface</item>
         <item name="colorOnBackground">@color/colorOnBackground</item>
-
-        <!-- Status bar color -->
+        
+        <!-- Status bar and navigation bar -->
         <item name="android:statusBarColor">@color/colorPrimaryDark</item>
         <item name="android:navigationBarColor">@color/colorPrimary</item>
+        
+        <!-- Light status bar icons -->
+        <item name="android:windowLightStatusBar">true</item>
     </style>
+
 </resources>
