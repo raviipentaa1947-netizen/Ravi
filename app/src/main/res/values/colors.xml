@@ -1,18 +1,7 @@
 <resources>
-    <!-- Primary Colors -->
-    <color name="orange_primary">#FF9800</color> <!-- Orange -->
-    <color name="primary_variant">#F57C00</color> <!-- Dark Orange -->
-    <color name="on_primary">#FFFFFF</color> <!-- White text on Orange -->
-
-    <!-- Secondary Colors -->
-    <color name="secondary_color">#FFE0B2</color> <!-- Light Orange -->
-    <color name="on_secondary">#000000</color> <!-- Black text on light background -->
-
-    <!-- Background & Surface -->
-    <color name="background_color">#FFFFFF</color>
-    <color name="surface_color">#FFFFFF</color>
-
-    <!-- General Colors -->
+    <!-- App Colors -->
+    <color name="orange_primary">#FF9800</color>
+    <color name="orange_dark">#F57C00</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
 </resources>
