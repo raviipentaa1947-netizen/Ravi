@@ -1,5 +1,13 @@
 <resources>
-    <!-- Base app styles -->
+
+    <!-- Base App Theme -->
+    <style name="Theme.SalaryCalculator" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/orange_primary</item>
+        <item name="colorPrimaryVariant">@color/orange_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <!-- Reusable Orange Button Style -->
     <style name="OrangeButton" parent="Widget.MaterialComponents.Button">
         <item name="android:background">@drawable/orange_button_bg</item>
         <item name="android:textColor">@color/white</item>
@@ -7,8 +15,4 @@
         <item name="android:layout_margin">8dp</item>
     </style>
 
-    <style name="Widget.SalaryCalculator.EditText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-        <item name="boxStrokeColor">@color/primary_variant</item>
-        <item name="hintTextColor">@color/secondary_color</item>
-    </style>
 </resources>
