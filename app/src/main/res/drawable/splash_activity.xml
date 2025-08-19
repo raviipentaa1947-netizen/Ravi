@@ -1,5 +1,5 @@
 <activity
-    android:name=".splashactivity"
+    android:name=".splash_activity"
     android:theme="@style/Theme.SalaryCalculator"
     android:exported="true">
     <intent-filter>
