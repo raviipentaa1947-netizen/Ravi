@@ -1,21 +1,23 @@
 <resources>
-    <!-- Orange Theme Colors -->
-    <color name="primary_color">#FF9800</color> <!-- Main Orange -->
-    <color name="primary_variant">#F57C00</color> <!-- Darker Orange -->
-    <color name="on_primary">#FFFFFF</color> <!-- Text on Orange -->
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#FF9800</color> <!-- Orange -->
+    <color name="colorPrimaryVariant">#F57C00</color> <!-- Darker Orange -->
+    <color name="colorOnPrimary">#FFFFFF</color> <!-- White text on Orange -->
 
-    <color name="secondary_color">#FFA726</color> <!-- Lighter Orange -->
-    <color name="on_secondary">#000000</color> <!-- Text on Secondary -->
+    <!-- Secondary Colors -->
+    <color name="colorSecondary">#FFC107</color> <!-- Amber -->
+    <color name="colorSecondaryVariant">#FFA000</color>
+    <color name="colorOnSecondary">#000000</color> <!-- Black text on Secondary -->
 
     <!-- Background & Surface -->
-    <color name="background_color">#FFFFFF</color>
-    <color name="on_background">#000000</color>
-    <color name="surface_color">#FFFFFF</color>
-    <color name="on_surface">#000000</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnBackground">#000000</color>
 
-    <!-- Splash & Button -->
-    <color name="splashGradientStart">#F57C00</color>
-    <color name="splashGradientEnd">#FFB74D</color>
+    <!-- Button Color -->
     <color name="buttonColor">#FF9800</color>
-    <color name="secondaryText">#757575</color>
+
+    <!-- Extra Colors -->
+    <color name="splashGradientStart">#FF5722</color>
+    <color name="splashGradientEnd">#FFC107</color>
 </resources>
