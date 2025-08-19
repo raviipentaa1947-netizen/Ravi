@@ -1,18 +1,22 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <style name="Theme.SalaryCalculator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Primary Color Scheme -->
-        <item name="colorPrimary">@color/primary_color</item>
-        <item name="colorPrimaryVariant">@color/primary_variant</item>
-        <item name="colorOnPrimary">@color/on_primary</item>
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
 
-        <!-- Secondary Color Scheme -->
-        <item name="colorSecondary">@color/secondary_color</item>
-        <item name="colorOnSecondary">@color/on_secondary</item>
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
 
-        <!-- Background & Surface -->
-        <item name="android:colorBackground">@color/background_color</item>
-        <item name="colorOnBackground">@color/on_background</item>
-        <item name="colorSurface">@color/surface_color</item>
-        <item name="colorOnSurface">@color/on_surface</item>
+        <!-- Background -->
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
     </style>
 </resources>
