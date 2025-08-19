@@ -1,17 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Primary Orange -->
-    <color name="colorPrimary">#FFA500</color>
-    <!-- Darker Orange for status bar -->
-    <color name="colorPrimaryDark">#FF8C00</color>
-    <!-- Yellow for accent elements -->
-    <color name="colorAccent">#FFD700</color>
-
-    <!-- Background / Surface -->
-    <color name="colorBackground">#FFFFFF</color>
-    <color name="colorSurface">#FFF8E1</color>
-
-    <!-- Text Colors -->
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Secondary Colors -->
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorOnSecondary">#000000</color>
+
+    <!-- Background and Surface -->
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorSurface">#FFFFFF</color>
     <color name="colorOnBackground">#000000</color>
 </resources>
