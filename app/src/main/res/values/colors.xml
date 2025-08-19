@@ -9,8 +9,12 @@
 
     <!-- Custom Colors -->
     <color name="orange_primary">#FF9800</color>
+    <color name="primary_color">#FF9800</color> <!-- Same as orange_primary -->
+    <color name="primary_variant">#F57C00</color>
+    <color name="secondary_color">#FF5722</color>
+    
     <color name="splashGradientStart">#FF5722</color>
     <color name="splashGradientEnd">#FFC107</color>
-    <color name="buttonColor">#FF5722</color>
+    <color name="buttonColor">#4CAF50</color>
     <color name="secondaryText">#757575</color>
 </resources>
